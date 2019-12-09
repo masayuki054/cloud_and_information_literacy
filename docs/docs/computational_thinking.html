@@ -3,11 +3,12 @@
 "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-12-09 月 10:46 -->
+<!-- 2019-12-09 月 11:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
+<title>クラウドと情報リテラシー 計算論的思考</title>
 <meta name="generator" content="Org mode" />
+<meta name="author" content="suzuki@iwate-u.ac.jp" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -179,6 +180,20 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href=".././styles/sos/css/sos.css">
+<link rel="stylesheet" type="text/css" href=".././styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src=".././styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src=".././styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src=".././styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src=".././styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src=".././styles/bigblow/js/jquery.zclip.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src=".././styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src=".././styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src=".././styles/sos/js/hideshow.js"></script>
+<script type="text/javascript" src=".././styles/sos/js/sos.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -228,47 +243,11 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#orgad36f8d">1. 計算論的思考</a></li>
-<li><a href="#orgfe07d69">2. 計算論的思考のまとめ</a>
-<ul>
-<li><a href="#orga5b3570">2.1. このエッセイの目的</a></li>
-<li><a href="#org7a9ba36">2.2. 計算論的思考</a></li>
-<li><a href="#org9dd8bd0">2.3. 計算手法と計算モデル</a></li>
-<li><a href="#orgf2c74f1">2.4. 計算論的思考は機械知能の謎に挑む：</a></li>
-<li><a href="#org38c439f">2.5. 計算論的思考は，すべての人にとって基本的な技術である．</a></li>
-<li><a href="#orga5b2e7e">2.6. 計算論的思考は</a>
-<ul>
-<li><a href="#orgbf9db50">2.6.1. 特定の問題解決には，</a></li>
-<li><a href="#org21cfdbd">2.6.2. コンピュータ科学</a></li>
-</ul>
-</li>
-<li><a href="#org3de5cb0">2.7. 計算論的思考は一見難しそうな問題を我々がすでに解き方を知っている問題に変換する．</a></li>
-<li><a href="#orge204af9">2.8. 計算論的思考とは</a></li>
-<li><a href="#orgdd274aa">2.9. 計算論的思考とは抽象化と分割統治を用いることである．</a></li>
-<li><a href="#org468db8d">2.10. 計算論的思考とは予防，防御，そして最悪のシナリオからの復帰という観点を持ち，</a></li>
-<li><a href="#org791c18d">2.11. 計算論的思考はヒューリスティックな推論により解を発見することである．</a></li>
-<li><a href="#orgced8e31">2.12. 計算論的思考は超大量のデータを使って計算を高速化することである．</a></li>
-<li><a href="#org1f37c64">2.13. 私たちは計算論的思考が他の研究領域に与える影響を目撃してきた．</a>
-<ul>
-<li><a href="#org0623301">2.13.1. たとえば，機械学習は統計学を変えた．</a></li>
-<li><a href="#org72c01c1">2.13.2. 計算生物学は生物学者の思考法を変えつつある．</a></li>
-<li><a href="#orgf308978">2.13.3. 同様に，計算ゲーム理論は経済学者の思考法を，ナノコンピューティングは化学者の思考法を，そして量子計算は物理学者の思考法をそれぞれ変えつつある</a></li>
-</ul>
-</li>
-<li><a href="#org58de39e">2.14. それは何であり，何でないか</a></li>
-<li><a href="#org52d25a8">2.15. 計算論的思考は誰のために</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgad36f8d" class="outline-2">
-<h2 id="orgad36f8d"><span class="section-number-2">1</span> 計算論的思考</h2>
-<div class="outline-text-2" id="text-1">
+<h1 class="title">クラウドと情報リテラシー 計算論的思考</h1>
+
+<div id="outline-container-org7226498" class="outline-2">
+<h2 id="org7226498">計算論的思考</h2>
+<div class="outline-text-2" id="text-org7226498">
 <p>
 <a href="https://www.cs.cmu.edu/afs/cs/usr/wing/www/ct-japanese.pdf">計算論的思考</a>
 </p>
@@ -282,9 +261,9 @@ Computational Thinkingとは何か - 小さなごちそう
 </div>
 
 
-<div id="outline-container-orgfe07d69" class="outline-2">
-<h2 id="orgfe07d69"><span class="section-number-2">2</span> 計算論的思考のまとめ</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-org4cb8ba9" class="outline-2">
+<h2 id="org4cb8ba9">計算論的思考のまとめ</h2>
+<div class="outline-text-2" id="text-org4cb8ba9">
 <p>
 Jeannette M.Wing: Computational Thinking,
 COMM.ACM, Vol.49,No.3,pp33-35, Mar.2006
@@ -301,9 +280,9 @@ Computational Thinking
 </p>
 </div>
 
-<div id="outline-container-orga5b3570" class="outline-3">
-<h3 id="orga5b3570"><span class="section-number-3">2.1</span> このエッセイの目的</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-org98daac7" class="outline-3">
+<h3 id="org98daac7">このエッセイの目的</h3>
+<div class="outline-text-3" id="text-org98daac7">
 <p>
 すべての人が学びたい，そして使いたい，と考えるに違いない
 一般的な態度とスキルに関するものである．
@@ -311,9 +290,9 @@ Computational Thinking
 </div>
 </div>
 
-<div id="outline-container-org7a9ba36" class="outline-3">
-<h3 id="org7a9ba36"><span class="section-number-3">2.2</span> 計算論的思考</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-org9e11e54" class="outline-3">
+<h3 id="org9e11e54">計算論的思考</h3>
+<div class="outline-text-3" id="text-org9e11e54">
 <p>
 は計算プロセスの能力と限界の上に成立しているもので，
 </p>
@@ -324,9 +303,9 @@ Computational Thinking
 </div>
 </div>
 
-<div id="outline-container-org9dd8bd0" class="outline-3">
-<h3 id="org9dd8bd0"><span class="section-number-3">2.3</span> 計算手法と計算モデル</h3>
-<div class="outline-text-3" id="text-2-3">
+<div id="outline-container-org30aec3c" class="outline-3">
+<h3 id="org30aec3c">計算手法と計算モデル</h3>
+<div class="outline-text-3" id="text-org30aec3c">
 <p>
 は，我々個人が単独では決して達成できないであろう問題を解決したリ，
 </p>
@@ -337,9 +316,9 @@ Computational Thinking
 </div>
 </div>
 
-<div id="outline-container-orgf2c74f1" class="outline-3">
-<h3 id="orgf2c74f1"><span class="section-number-3">2.4</span> 計算論的思考は機械知能の謎に挑む：</h3>
-<div class="outline-text-3" id="text-2-4">
+<div id="outline-container-org4bcca83" class="outline-3">
+<h3 id="org4bcca83">計算論的思考は機械知能の謎に挑む：</h3>
+<div class="outline-text-3" id="text-org4bcca83">
 <ul class="org-ul">
 <li>人間がコンピュータより優れているのは何か？</li>
 
@@ -355,9 +334,9 @@ Computational Thinking
 </div>
 </div>
 
-<div id="outline-container-org38c439f" class="outline-3">
-<h3 id="org38c439f"><span class="section-number-3">2.5</span> 計算論的思考は，すべての人にとって基本的な技術である．</h3>
-<div class="outline-text-3" id="text-2-5">
+<div id="outline-container-orgea36c89" class="outline-3">
+<h3 id="orgea36c89">計算論的思考は，すべての人にとって基本的な技術である．</h3>
+<div class="outline-text-3" id="text-orgea36c89">
 <p>
 すべての子供の分析的思考能力として，
 「読み，書き，そろばん（算術）」のほかに計算論的思考を加えるべき
@@ -370,9 +349,9 @@ Computational Thinking
 </div>
 </div>
 
-<div id="outline-container-orga5b2e7e" class="outline-3">
-<h3 id="orga5b2e7e"><span class="section-number-3">2.6</span> 計算論的思考は</h3>
-<div class="outline-text-3" id="text-2-6">
+<div id="outline-container-orgafef927" class="outline-3">
+<h3 id="orgafef927">計算論的思考は</h3>
+<div class="outline-text-3" id="text-orgafef927">
 <p>
 基本的なコンピュータ科学の概念に基づき，
 </p>
@@ -389,9 +368,9 @@ Computational Thinking
 </p>
 </div>
 
-<div id="outline-container-orgbf9db50" class="outline-4">
-<h4 id="orgbf9db50"><span class="section-number-4">2.6.1</span> 特定の問題解決には，</h4>
-<div class="outline-text-4" id="text-2-6-1">
+<div id="outline-container-org262c065" class="outline-4">
+<h4 id="org262c065">特定の問題解決には，</h4>
+<div class="outline-text-4" id="text-org262c065">
 <ul class="org-ul">
 <li>どれくらい難しいか？</li>
 <li>最善の解決の道筋は何か？</li>
@@ -403,18 +382,18 @@ Computational Thinking
 </div>
 </div>
 
-<div id="outline-container-org21cfdbd" class="outline-4">
-<h4 id="org21cfdbd"><span class="section-number-4">2.6.2</span> コンピュータ科学</h4>
-<div class="outline-text-4" id="text-2-6-2">
+<div id="outline-container-orgab4102b" class="outline-4">
+<h4 id="orgab4102b">コンピュータ科学</h4>
+<div class="outline-text-4" id="text-orgab4102b">
 <p>
 はこれらの問いに正確に答えるための確固とした理論の上に構築されてい
 る．
 </p>
 </div>
 
-<ol class="org-ol">
-<li><a id="org8ae3eaa"></a>問題の難しさを述べるためには<br />
-<div class="outline-text-5" id="text-2-6-2-1">
+<div id="outline-container-org98e3f7a" class="outline-5">
+<h5 id="org98e3f7a">問題の難しさを述べるためには</h5>
+<div class="outline-text-5" id="text-org98e3f7a">
 <ul class="org-ul">
 <li>その土台となる機械̶問題の解決策を探る計算装置─の能力を知らねばならない．</li>
 
@@ -422,10 +401,11 @@ Computational Thinking
 らない．</li>
 </ul>
 </div>
-</li>
+</div>
 
-<li><a id="org21e59ab"></a>問題を効率良く解くためには<br />
-<div class="outline-text-5" id="text-2-6-2-2">
+<div id="outline-container-orgd1ad855" class="outline-5">
+<h5 id="orgd1ad855">問題を効率良く解くためには</h5>
+<div class="outline-text-5" id="text-orgd1ad855">
 <p>
 次のことを考慮せねばならない．
 </p>
@@ -438,23 +418,22 @@ Computational Thinking
 <li>また解の判定に偽陽性や偽陰性が許されるのか，</li>
 </ul>
 </div>
-</li>
-</ol>
+</div>
 </div>
 </div>
 
-<div id="outline-container-org3de5cb0" class="outline-3">
-<h3 id="org3de5cb0"><span class="section-number-3">2.7</span> 計算論的思考は一見難しそうな問題を我々がすでに解き方を知っている問題に変換する．</h3>
-<div class="outline-text-3" id="text-2-7">
+<div id="outline-container-org8651f19" class="outline-3">
+<h3 id="org8651f19">計算論的思考は一見難しそうな問題を我々がすでに解き方を知っている問題に変換する．</h3>
+<div class="outline-text-3" id="text-org8651f19">
 <p>
 これには簡略化，埋込，変換，シミュレーションなどが使えるだろう．
 </p>
 </div>
 </div>
 
-<div id="outline-container-orge204af9" class="outline-3">
-<h3 id="orge204af9"><span class="section-number-3">2.8</span> 計算論的思考とは</h3>
-<div class="outline-text-3" id="text-2-8">
+<div id="outline-container-org4115d3f" class="outline-3">
+<h3 id="org4115d3f">計算論的思考とは</h3>
+<div class="outline-text-3" id="text-org4115d3f">
 <ul class="org-ul">
 <li>再帰的に考えることであり，</li>
 <li>並列処理であり，</li>
@@ -484,9 +463,9 @@ Computational Thinking
 </div>
 </div>
 
-<div id="outline-container-orgdd274aa" class="outline-3">
-<h3 id="orgdd274aa"><span class="section-number-3">2.9</span> 計算論的思考とは抽象化と分割統治を用いることである．</h3>
-<div class="outline-text-3" id="text-2-9">
+<div id="outline-container-org943106e" class="outline-3">
+<h3 id="org943106e">計算論的思考とは抽象化と分割統治を用いることである．</h3>
+<div class="outline-text-3" id="text-org943106e">
 <p>
 問題点の分割である．
 </p>
@@ -522,9 +501,9 @@ Computational Thinking
 </div>
 </div>
 
-<div id="outline-container-org468db8d" class="outline-3">
-<h3 id="org468db8d"><span class="section-number-3">2.10</span> 計算論的思考とは予防，防御，そして最悪のシナリオからの復帰という観点を持ち，</h3>
-<div class="outline-text-3" id="text-2-10">
+<div id="outline-container-orga7b5447" class="outline-3">
+<h3 id="orga7b5447">計算論的思考とは予防，防御，そして最悪のシナリオからの復帰という観点を持ち，</h3>
+<div class="outline-text-3" id="text-orga7b5447">
 <p>
 そのために冗長性，故障封じ込め，誤り訂正などを用いることである．
 </p>
@@ -540,9 +519,9 @@ Computational Thinking
 </div>
 </div>
 
-<div id="outline-container-org791c18d" class="outline-3">
-<h3 id="org791c18d"><span class="section-number-3">2.11</span> 計算論的思考はヒューリスティックな推論により解を発見することである．</h3>
-<div class="outline-text-3" id="text-2-11">
+<div id="outline-container-orgb6bd3b5" class="outline-3">
+<h3 id="orgb6bd3b5">計算論的思考はヒューリスティックな推論により解を発見することである．</h3>
+<div class="outline-text-3" id="text-orgb6bd3b5">
 <ul class="org-ul">
 <li>それは不確定な状況でのプランニング，学習，スケジューリングのことである．</li>
 <li>それは探索して，探索して，そしてさらに探索してWebペー</li>
@@ -553,9 +532,9 @@ Computational Thinking
 </div>
 </div>
 
-<div id="outline-container-orgced8e31" class="outline-3">
-<h3 id="orgced8e31"><span class="section-number-3">2.12</span> 計算論的思考は超大量のデータを使って計算を高速化することである．</h3>
-<div class="outline-text-3" id="text-2-12">
+<div id="outline-container-org0119cb8" class="outline-3">
+<h3 id="org0119cb8">計算論的思考は超大量のデータを使って計算を高速化することである．</h3>
+<div class="outline-text-3" id="text-org0119cb8">
 <ul class="org-ul">
 <li><p>
 それは時間と空間のトレードオフ，あるいは計算パワーと記憶容量のト
@@ -607,13 +586,13 @@ Computational Thinking
 </div>
 </div>
 
-<div id="outline-container-org1f37c64" class="outline-3">
-<h3 id="org1f37c64"><span class="section-number-3">2.13</span> 私たちは計算論的思考が他の研究領域に与える影響を目撃してきた．</h3>
-<div class="outline-text-3" id="text-2-13">
+<div id="outline-container-orga61f5c6" class="outline-3">
+<h3 id="orga61f5c6">私たちは計算論的思考が他の研究領域に与える影響を目撃してきた．</h3>
+<div class="outline-text-3" id="text-orga61f5c6">
 </div>
-<div id="outline-container-org0623301" class="outline-4">
-<h4 id="org0623301"><span class="section-number-4">2.13.1</span> たとえば，機械学習は統計学を変えた．</h4>
-<div class="outline-text-4" id="text-2-13-1">
+<div id="outline-container-orgeaa65e5" class="outline-4">
+<h4 id="orgeaa65e5">たとえば，機械学習は統計学を変えた．</h4>
+<div class="outline-text-4" id="text-orgeaa65e5">
 <p>
  統計的学習は，ほんの数年前には
 考えられなかったような，データ量と次元の巨大な問題に適用された．す
@@ -630,13 +609,13 @@ Computational Thinking
 </div>
 </div>
 
-<div id="outline-container-org72c01c1" class="outline-4">
-<h4 id="org72c01c1"><span class="section-number-4">2.13.2</span> 計算生物学は生物学者の思考法を変えつつある．</h4>
+<div id="outline-container-org8c042b7" class="outline-4">
+<h4 id="org8c042b7">計算生物学は生物学者の思考法を変えつつある．</h4>
 </div>
 
-<div id="outline-container-orgf308978" class="outline-4">
-<h4 id="orgf308978"><span class="section-number-4">2.13.3</span> 同様に，計算ゲーム理論は経済学者の思考法を，ナノコンピューティングは化学者の思考法を，そして量子計算は物理学者の思考法をそれぞれ変えつつある</h4>
-<div class="outline-text-4" id="text-2-13-3">
+<div id="outline-container-org632a8c8" class="outline-4">
+<h4 id="org632a8c8">同様に，計算ゲーム理論は経済学者の思考法を，ナノコンピューティングは化学者の思考法を，そして量子計算は物理学者の思考法をそれぞれ変えつつある</h4>
+<div class="outline-text-4" id="text-org632a8c8">
 <p>
 このような思考法は他分野の科学者だけでなくすべての人に必要な技量の1
 つである．ユビキタスコンピューティングが今日にもたらした影響と同様
@@ -655,9 +634,9 @@ Computational Thinking
 </div>
 
 
-<div id="outline-container-org58de39e" class="outline-3">
-<h3 id="org58de39e"><span class="section-number-3">2.14</span> それは何であり，何でないか</h3>
-<div class="outline-text-3" id="text-2-14">
+<div id="outline-container-orgeead339" class="outline-3">
+<h3 id="orgeead339">それは何であり，何でないか</h3>
+<div class="outline-text-3" id="text-orgeead339">
 <p>
 コンピュータ科学とは計算に関する，すなわち計算可能性と計算方式の，
 学問である．
@@ -781,9 +760,9 @@ Computational Thinking
 </div>
 </div>
 
-<div id="outline-container-org52d25a8" class="outline-3">
-<h3 id="org52d25a8"><span class="section-number-3">2.15</span> 計算論的思考は誰のために</h3>
-<div class="outline-text-3" id="text-2-15">
+<div id="outline-container-org55fa76b" class="outline-3">
+<h3 id="org55fa76b">計算論的思考は誰のために</h3>
+<div class="outline-text-3" id="text-org55fa76b">
 <p>
 コンピュータ科学の教授は「コンピュータ科学者のように考える方法」と
 名付けた科目を，大学の新入生に教えるべきである．
@@ -813,7 +792,8 @@ Computational Thinking
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2019-12-09 月 10:46</p>
+<p class="author">Author: suzuki@iwate-u.ac.jp</p>
+<p class="date">Created: 2019-12-09 月 11:05</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
