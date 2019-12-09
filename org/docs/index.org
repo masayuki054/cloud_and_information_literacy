@@ -1,0 +1,29 @@
+#+setupfile: ../info/index-sos-header.setup
+#+include: ../info/common-header.org
+#+title: ドキュメント一覧
+* ドキュメント一覧
+
+1. [[./abstraction.org][abstraction]]
+2. [[./arts_of_thinking_resume.org][arts_of_thinking_resume]]
+3. [[./computational_thinking.org][computational_thinking]]
+4. [[./critical_thinking.org][critical_thinking]]
+5. [[./gtd-related.org][gtd-related]]
+6. [[./hyper_link.org][hyper_link]]
+7. [[./ict_and_outline.org][ict_and_outline]]
+8. [[./idea.org][idea]]
+9. [[./information-literacy.org][information-literacy]]
+10. [[./markup.org][markup]]
+11. [[./mindmup.org][mindmup]]
+12. [[./org-mode.org][org-mode]]
+13. [[./outline.org][outline]]
+14. [[./pc.org][pc]]
+15. [[./self-introduction.org][self-introduction]]
+16. [[./thinking-wikipedia.org][thinking-wikipedia]]
+17. [[./visual_thinking.org][visual_thinking]]
+18. [[./web.org][web]]
+19. [[./workflowy.org][workflowy]]
+20. [[./writing-by-outliner.org][writing-by-outliner]]
+21. [[./xmind.org][xmind]]
+22. [[./水平思考.org][水平思考]]
+
+
