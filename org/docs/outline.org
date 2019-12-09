@@ -1,3 +1,5 @@
+#+setupfile: ../info/index-sos-header.setup
+#+include: ../info/common-header.org
 #+TITLE: suzuki docs: 文章の構成とアウトライン
 #+AUTHOR: masayuki
 #+LANGUAGE: ja

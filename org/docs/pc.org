@@ -1,2 +1,5 @@
+#+setupfile: ../info/index-sos-header.setup
+#+include: ../info/common-header.org
+#+title: pc のこと
 
-[[https://blog.halpas.com/archives/4291][日本語版のFirefox Portableをダウンロードする方法]]
+- [[https://blog.halpas.com/archives/4291][日本語版のFirefox Portableをダウンロードする方法]]

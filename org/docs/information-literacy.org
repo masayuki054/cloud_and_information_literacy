@@ -1,4 +1,9 @@
-* 新説 情報リテラシの章立て
+#+setupfile: ../info/index-sos-header.setup
+#+include: ../info/common-header.org
+#+title: 新説 情報リテラシ(章建て)
+
+
+* 新説 情報リテラシの章建て
 
 [[https://www.amazon.co.jp/%E6%96%B0%E8%AA%AC-%E6%83%85%E5%A0%B1%E3%83%AA%E3%83%86%E3%83%A9%E3%82%B7%E3%83%BC%E2%80%95%E3%82%BD%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%AB%E6%99%82%E4%BB%A3%E3%82%92%E7%94%9F%E3%81%8D%E6%8A%9C%E3%81%8F%E3%81%9F%E3%82%81%E3%81%AE%E6%83%85%E5%A0%B1%E3%82%B9%E3%82%AD%E3%83%AB-%E6%9D%89%E6%B5%A6-%E5%8F%B8/dp/4862831494]["新説 情報リテラシー―ソーシャル時代を生き抜くための情報スキル | 杉浦司"]]
 

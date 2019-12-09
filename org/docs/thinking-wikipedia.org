@@ -1,3 +1,7 @@
+#+setupfile: ../info/index-sos-header.setup
+#+include: ../info/common-header.org
+#+title: 思考 (wikipediaより)
+
 * 思考
 
 出展: https://ja.wikipedia.org/wiki/%E6%80%9D%E8%80%83 

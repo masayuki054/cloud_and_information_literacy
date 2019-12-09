@@ -1,3 +1,7 @@
+#+setupfile: ../info/index-sos-header.setup
+#+include: ../info/common-header.org
+#+title: GTD (Getting Things Done)
+
 * GTD
 ** 情報元
 - Getting Things Done - Wikipedia

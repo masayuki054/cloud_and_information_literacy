@@ -1,3 +1,7 @@
+#+setupfile: ../info/index-sos-header.setup
+#+include: ../info/common-header.org
+#+title: マークアップ
+
 * markup とは 
 
   [[https://mynavi-creator.jp/blog/article/what-is-mark-up][マークアップとは - Markupの意味と基本知識 | マイナビクリエイター]]

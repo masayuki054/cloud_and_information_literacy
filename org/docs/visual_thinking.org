@@ -1,3 +1,7 @@
+#+setupfile: ../info/index-sos-header.setup
+#+include: ../info/common-header.org
+#+title: 図で考える
+
 * 図で考える。シンプルになる 
 
   自分の考えをメモする練習をして，考えることとメモの関係について考えて
@@ -86,6 +90,7 @@
 
      - 方針をつかむため
      - プラミッドの図を使う
+
 
 ** 7つの図を使ってみよう
 

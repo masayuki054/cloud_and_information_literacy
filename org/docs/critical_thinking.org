@@ -1,3 +1,7 @@
+#+setupfile: ../info/index-sos-header.setup
+#+include: ../info/common-header.org
+#+title: 批判的思考
+
 * 批判的思考
 
 ** 講義で紹介する

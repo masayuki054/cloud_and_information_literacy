@@ -1,3 +1,7 @@
+#+setupfile: ../info/index-sos-header.setup
+#+include: ../info/common-header.org
+#+title: 計算論的思考
+
 ** 計算論的思考
 
 [[https://www.cs.cmu.edu/afs/cs/usr/wing/www/ct-japanese.pdf][計算論的思考]]
