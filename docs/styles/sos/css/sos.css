@@ -3,7 +3,7 @@
 
 h1,h2,h3,h4,h5,h6,legend{
     font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
-    font-weight:700;
+    font-weight:bold;
     margin-top:0;
 }
 
@@ -20,19 +20,19 @@ h2{
 }
 
 h3{
-    font-size:160%;
+    font-size:150%;
 }
 
 h4{
-    font-size:140%;
+    font-size:120%;
 }
 
 h5{
-    font-size:130%;
+    font-size:110%;
 }
 
 h6{
-    font-size:120%;
+    font-size:100%;
 }
 
 h4,h5,h6{
