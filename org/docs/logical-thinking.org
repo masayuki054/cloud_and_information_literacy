@@ -1,0 +1,28 @@
+#+setupfile: ../info/index-sos-header.setup
+#+include: ../info/common-header.org
+#+title: 論理的思考
+* 論理的思考
+
+  [[https://matome.naver.jp/odai/2139769466343898301][論理的に物事を考えるために３つのテクニックを身につけよう - NAVER]]
+
+  - So what, 
+
+    理由から結論を導く (s-:はピンときていない)
+
+  - why so, 
+
+    結論からその理由を導く (s-:はピンときていない)
+
+  - MECE (mutually exclusive, collectively exhaustive) 
+    - 漏れなく，ダブリなく
+    - 自分的には，網羅的に, 相互排他的に，
+
+   自分的には，ソフトウェア開発の経験から，
+   - 抽象化，モジュール(構造)化が，So what.
+   - 詳細化 (why so)
+   - 段階的に，スパイラルで，レベルにあわせて情報収集
+
+  
+  発想する場面での情報収集がMECE
+
+
