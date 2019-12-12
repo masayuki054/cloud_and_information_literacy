@@ -1,0 +1,38 @@
+#+setupfile: ../info/index-sos-header.setup
+#+include: ../info/common-header.org
+#+title: インターネット基盤
+
+* インターネット基盤
+
+[[https://www.slideshare.net/taijitsuchiya5/isp-55698799][インターネットの仕組みとISPの構造]] 
+(slideshare 70sheets)
+
+Google検索 "日本のインターネットの構成"
+- [[https://www.jpix.ad.jp/jp/technical_network.php][JPIX：テクニカル情報：ネットワーク構成]]
+- [[https://milestone-of-se.nesuke.com/nw-basic/grasp-nw/about-internet/][初心者にも分かるインターネットやネットワークの仕組み]]
+
+
+今の自分は，
+- インターネットの中のどの辺にいて，
+- どのような纒まり・組織の中にいて，
+- その中で，自分は誰で，
+- 自分が気をつけなければならないこと，
+- 組織が守ってくれること，
+- どんなサービスが受けられて，
+- それはどんな通信から成り立っているのか
+
+インターネットの中の放送大学の中のモデル
+- 自分
+- ネットワーク
+
+インターネットの中の放送大学の外のモデル
+- 自分と家族と自分の居場所 (家庭ネットワーク)
+
+モバイルネットワーク
+- 自分とモバイル端末
+- 他の自分との共有
+
+
+
+
+

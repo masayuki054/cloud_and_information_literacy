@@ -1,0 +1,18 @@
+#+setupfile: ../info/index-sos-header.setup
+#+include: ../info/common-header.org
+#+title: Dynalist
+
+* dynalist クラウド・アウトライナー
+
+** 登録
+
+   https://dynalist.io にいって，Dynalist に登録します。
+
+   メールアドレスを使ってサインアップ (新規登録)
+   - [[https://sapling-learning.com/2018/08/15/dynalist-%e3%81%b8%e3%81%ae%e6%96%b0%e8%a6%8f%e7%99%bb%e9%8c%b2%e3%81%ae%e4%bb%95%e6%96%b9/][Dynalist への新規登録の仕方 | 学習塾サプリング]]
+
+** とりあえず
+
+** 使い方
+
+   [[https://yasucore.com/recommend-outliner-dynalist/][【文章を書くすべての人へ】神アウトライナー！Dynalist ]]

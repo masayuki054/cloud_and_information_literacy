@@ -1,3 +1,45 @@
+* 進行
+- キーワード検索
+- 聴講の目的マップの作成
+- 実践内容アンケート
+
+
+- mindmup の 共同作業モードが使えない
+  - 自動で update， たぶん，されない
+
+- 必要な図
+  - internet
+  - PC, app, OS, hardware
+  - cloud
+  - 放送大学ネットワーク, LAN ~ Internet
+  - HyperText
+  - 
+* 人生を変える勉強 
+- ビデオの視聴
+- 
+
+* XMind/ZEN -> [Dynalist, Mindmup]
+- Dynalist
+  - @XMind/ZEN
+  - アウトライン表示にする
+  - メニューから全て選択をする
+  - メニューからコピーし
+  - @Dynalist
+  - 項目のところで (タイトルではなく)
+  - はりつけ 
+
+- -> Mindmup
+  - @XMind
+    - ノード選択
+    - コントロール+C
+
+* Word 要る？
+
+- ワードでリンクを貼る
+- ワードに RTF を取り込む
+- ワードの文書の技術
+- ワードでアウトライン
+
 * [[https://drive.google.com/open?id=1pKtUXiA2AEJ-eBcjTVlkE4M4KoFJB4UF][Googleドライブ]]
 
   [[https://drive.google.com/open?id=1pKtUXiA2AEJ-eBcjTVlkE4M4KoFJB4UF][Googleドライブ]]

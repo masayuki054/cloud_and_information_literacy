@@ -115,11 +115,11 @@
  - IoTとビッグデータ
  - スマートマシン
 
-[[./x-maps/クラウドとは.png]]
+ [[./x_maps/クラウドとは.png]]
 
 * 講義の目的
 
-   - 情報化社会の現状について自分なりの理解を作ること
+  - 情報化社会の現状について自分なりの理解を作ること
 
      クラウドとは何か
 
@@ -133,7 +133,7 @@
 
      - マッピングアプリ
 
-   - 情報リララシの技術
+   - 情報リララシの技術 
 
      - 情報の取得
 
@@ -143,7 +143,7 @@
 
      - 情報の発信
 
-   - Google サービスとは
+  - Googleのクラウド・サービスとは
 
      - Googleの使命
 
@@ -153,10 +153,7 @@
 
      - Google Policy と規約
 
-
-
-
-* 授業内容
+* 授業内容 
    
    放送大学のインターネット環境を体験的に概観します。
 
@@ -212,11 +209,10 @@
 
    講義内容一覧のマップです。ダウンロードしてメモに使ってください:
 
-   [[./x_maps/c00-クラウドと情報リテラシー.png]]
-   ([[./x_maps/c00-クラウドと情報リテラシー.xmind][XMindファイルのダウンロード]])
+   [[./x_maps/クラウドと情報リテラシー.png]]
+   ([[./x_maps/クラウドと情報リテラシー.xmind][XMindファイルのダウンロード]])
 
 * 受講の準備
-
 
 *** USB で持ち運ぶ アプリ
 
@@ -235,12 +231,12 @@
 
     自分の マイドライブ (https://drive.google.com/drive/my-drive) に
 
-    - [ ] 「クラウドと情報リテラシ」という名前のフォルダを新規作成
+    - クラウドと情報リテラシ」という名前のフォルダを新規作成
 
-    - [ ] そのフォルダの共有設定する
+    - そのフォルダの共有設定する
       - フォルダを右クリックして，メニューから，「共有」を選ぶ
 
-    - [ ] 講師を招待してください
+    - 講師 (msyk054@gmail.com) aを招待してください
 
     このフォルダをレポート提出に使います。
 
@@ -256,41 +252,26 @@
     
     [[https://iiv.ne.jp/xmind-zen-howto/][XMind ZEN マインドマップの作り方から仕事に活かす整理術]]
 
+
 *** アウトライナー (Dynalist)を使ってみよう
 
-    下記のページを読んで，使ってみましょう。
-    
-    [[https://dynalist.io/d/Kl6m83TR5hhoiDnlhOeACPZE][Dynalistを始めよう]]
+    メールアドレスを使ってサインアップ (新規登録)
+    - [[https://sapling-learning.com/2018/08/15/dynalist-%e3%81%b8%e3%81%ae%e6%96%b0%e8%a6%8f%e7%99%bb%e9%8c%b2%e3%81%ae%e4%bb%95%e6%96%b9/][Dynalist への新規登録の仕方 | 学習塾サプリング]]
 
+    とりあえず, [[https://dynalist.io/d/Kl6m83TR5hhoiDnlhOeACPZE][Dynalistを始めよう]]
+
+    アウトライナとしての使い方は，
+    [[https://yasucore.com/recommend-outliner-dynalist/][【文章を書くすべての人へ】神アウトライナー！Dynalist ]]
 
 * 放送大学のインターネット環境を体験的に概観します。
 
 ** 放送大学ネットワーク
 
-   - アカウントとパスワード
-   - Windowsネットワーク
-   - domain名とIPアドレス
+   [[./docs/pc.org][ICT環境の把握]]
 
-   - Mail
-   - Webサービス
-   - ファイル共有サービス
-   - 外のネットワークとの関係
+   - 頭の中に，ICT環境の絵が描けるようになりましょう。
 
-   - Gsuite
-
-   - 外の自分
-     
-     PC と LAN と サーバ と インターネット
-    
-    explore
-    - ネットワークから見えるもの
-
-    Powershell コマンドを使って
-    - ipconfig
-    - arp
-    - nslookup q=a, q=soa, q=mx, ouj.ac.jp., 8.8.8.8
-    - netstat
-
+** Googleサービスの利用
 *** G Suite
 
     campus.ouj.ac.jp
@@ -312,10 +293,7 @@
     - 自分のグーグルアカウントを確かめましょう。
       講師のアカウントは，spct03a@campus.ouj.ac.jp です。
  
-    - 皆さんは，Gmailを使って講師のメールが届いたか確認してくださ
-      い。
-
-    - Google Driveを使ってみましょう。
+*** Google Driveを使ってみましょう。
     - 講師の用意した，Google Driveのフォルダーを使ってみましょう。
  
     - スマホでGoogleDriveを使ってみましょう。
@@ -774,9 +752,75 @@
 
 * Googleについて
 
-   - Google の使命
-   - Google 検索の仕組み
-   - G Suite
+  
+
+** Googleの使命
+
+   [[https://about.google/intl/ja/][概要 - Google]] 
+
+   [[https://www.google.com/intl/ja/search/howsearchworks/][Google 検索の仕組み | 概要]]
+
+   [[https://www.google.com/intl/ja/search/howsearchworks/mission/][Google 検索の仕組み | Google の使命]]
+
+   [[https://googleblog.blogspot.com/2012/05/introducing-knowledge-graph-things-not.html][Introducing the Knowledge Graph: things, not strings]]
+   
+** Google GSuite のヘルプセンター
+
+   [[https://gsuite.google.co.jp/intl/ja/support/][電話とメールによる 24 時間 365 日体制のサポート - G Suite]]のよくある質問
+
+   [[https://www.dsk-cloud.com/blog/g-suite-overview][いまさら聞けない G Suite とは メリットや機能を基礎から解説]]
+
+** Google Policy と規約
+
+   [[https://policies.google.com/?hl=ja][ポリシーと規約 – Google]]
+
+*** プライバシー ポリシー
+
+   Google が収集する情報とその理由、情報の利用方法、情報の確認や更新の
+   方法について説明しています。
+
+   Google のプライバシー ポリシーを読む
+
+*** 利用規約
+
+    Google のサービスを利用するときに同意していただくルールについて説明しています。
+
+    Google の利用規約を読む
+
+*** Google セーフティ センター
+
+    すべての人にサービスを提供するということは、それを利用するすべての
+    人を守ることを意味します。Google のサービスにはセキュリティ機能や
+    プライバシー管理機能が組み込まれています。また、ご家族のデジタル機
+    器のオンライン利用に関する基本ルールを設定するためのツールも提供し
+    ています。詳しくは、safety.google をご覧ください。
+
+    ユーザーの安全を維持するための Google の取り組みを確認する
+
+*** Google アカウント
+
+    ご利用のアカウントの管理、保護、安全対策を 1 か所で行えます。
+    [Google アカウント] では、設定やツールにすばやくアクセスしてデータ
+    の安全保護対策やプライバシーの保護を行えます。
+
+    Google アカウントにアクセスする
+
+*** Google のプライバシーとセキュリティの原則
+
+    Google は、すべてのユーザーのプライバシーを尊重しています。それは、
+    誰もが無料で利用できる製品やサービスを開発、提供することに伴う責任
+    です。Google の社員、プロセス、サービスは、ユーザーデータのプライ
+    バシーと安全性を維持するため、これらの原則に準拠しています。
+
+    プライバシーとセキュリティの原則を確認する
+
+*** Google サービス プライバシー ガイド
+
+    Gmail、検索、YouTube などの Google サービスでは、個人情報や利用履
+    歴をご自身で管理して保護できます。Google サービス プライバシー ガ
+    イドでは、各種 Google サービスで提供しているプライバシー機能の管理
+    に関する情報をご案内します。
+
 
 * 全体のまとめ・レポート作成 (8時間目の演習として)
 

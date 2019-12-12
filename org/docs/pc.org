@@ -1,5 +1,117 @@
 #+setupfile: ../info/index-sos-header.setup
 #+include: ../info/common-header.org
-#+title: pc のこと
+#+title: ICT環境の把握
 
-- [[https://blog.halpas.com/archives/4291][日本語版のFirefox Portableをダウンロードする方法]]
+* ICT環境の把握 
+
+  Windows を使って，身の回りのICT環境を実感・把握しましょう:
+
+*** PCとLANとインターネット
+
+    身近な環境を概観
+
+    - Windows から見える
+
+      - 設定
+	- ネットワークとインターネット
+
+	  イーサーネット
+
+      - イクスプローラ
+	- ネットワークから見えるもの
+
+      - PowerShell
+
+	- ipconfig, ipconfig /all
+
+	- arp
+
+	- nslookup
+
+	- netstat
+
+    - コンピュータとシステム 
+
+      [[https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF][パーソナルコンピュータ - Wikipedia]]
+
+    - ローカル・エリア・ネットワーク
+
+	- 機器(プリンタ)を共有する仕組み
+
+	- サーバを共有する仕組み
+
+	- インターネット(通信)を共有する仕組み
+
+    - 放送大学の環境
+
+      - Wakaba (ウェブサーバ)
+
+      - 放送大学のネットワーク
+       
+    - internet
+
+*** コンピュータとインターネットの役目
+
+    基盤
+    - 情報共有
+    - 通信
+    - 分散(コンピューティング)
+
+*** Web 進化論
+
+    - Webによる情報共有の仕組み
+      - Webサーバ
+      - ブラウザ
+      - ハイパーテキスト
+      - Webアプリ
+      - クラウド
+
+*** クラウドとは
+    - コンピュータ環境の分散化，そして共有
+    - G Suiteの紹介
+
+
+
+
+
+
+
+
+
+* ネットワーク調査
+** Powershell の起動
+
+ - Windows の検索から，PowerShell アプリを探し，動かす
+ - コマンドを打ち込み，結果を得る
+
+** ネットワーク系コマンドまとめ
+
+https://qiita.com/toyokky/items/0bf0c5672b4b7cc27be0
+
+- 本ページは、ネットワークエンジニアの自分がよく使う、または今回調べて
+  から使ってみたいと思ったものを記載しています。
+
+*** ネットワーク系コマンド 
+
+ ipconfig：IPアドレスの情報を表示する
+
+ netsh interface ipv4 show interfaces：インターフェースのMTU値を確認
+
+ ping：指定先との通信可否を確認する
+
+ pathping：指定先までのネットーワークの所要時間を算出する
+
+ tracert：指定先とのネットワーク経路を調べる
+
+ netstat：TCP/IP通信の接続状態を調べる
+
+ nslookup正引き：ドメイン名からIPアドレスを取得する
+
+ nslookup逆引き：IPアドレスからドメイン名を取得する
+
+ arp：ARPテーブルを表示
+
+ route：ルーティングテーブルの表示・変更を行う
+
+
+
