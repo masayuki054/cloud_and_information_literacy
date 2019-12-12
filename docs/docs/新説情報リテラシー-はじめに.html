@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-12-12 木 22:02 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>クラウドと情報リテラシー 新説情報リテラシー (導入)</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="suzuki@iwate-u.ac.jp" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href=".././styles/sos/css/sos.css">
+<link rel="stylesheet" type="text/css" href=".././styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src=".././styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src=".././styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src=".././styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src=".././styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src=".././styles/bigblow/js/jquery.zclip.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src=".././styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src=".././styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src=".././styles/sos/js/hideshow.js"></script>
+<script type="text/javascript" src=".././styles/sos/js/sos.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">クラウドと情報リテラシー 新説情報リテラシー (導入)</h1>
+
+<div id="outline-container-orgb4b0aef" class="outline-2">
+<h2 id="orgb4b0aef">新説情報リテラシー (導入)</h2>
+<div class="outline-text-2" id="text-orgb4b0aef">
+</div>
+<div id="outline-container-org95d5a7d" class="outline-4">
+<h4 id="org95d5a7d">はじめにからの抜粋</h4>
+<div class="outline-text-4" id="text-org95d5a7d">
+<p>
+情報リテラシーの本来的意義は「情報を活用する創造的能力」であり、必要な
+情報を収集し、そのデータを加工分析して、必要な情報を生成し発信する能力
+である。本書により一生使い続けることができる情報リテラシーを学ぶことを
+目指す。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdc3ef91" class="outline-4">
+<h4 id="orgdc3ef91">(s-:) の意見</h4>
+<div class="outline-text-4" id="text-orgdc3ef91">
+<ul class="org-ul">
+<li>現在の，情報リテラシを支えるITリテラシ</li>
+<li>情報リテラシ (のwhatとhow) の中にも普遍的なこと，刹那的 なことがある</li>
+<li>ITリテラシも同様</li>
+<li>ある概念の what と how 明かにし，</li>
+<li>概念の，依存関係 (階層構造？) を明確にし，</li>
+<li>ごちゃまぜにせず，知や技術を，独立な部分と，依存する部分に分て
+考える，憶える，ことが大切</li>
+</ul>
+
+<p>
+知識の構造
+</p>
+
+<ul class="org-ul">
+<li>層モデル (上下関係，包含関係)</li>
+<li>ネットワークモデル (対等関係，相互依存関係)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org859a047" class="outline-4">
+<h4 id="org859a047">はじめにのまとめ by [s-:]</h4>
+<div class="outline-text-4" id="text-org859a047">
+</div>
+<div id="outline-container-org95146cc" class="outline-5">
+<h5 id="org95146cc">インターネット社会化とその影の部分</h5>
+<div class="outline-text-5" id="text-org95146cc">
+<p>
+世界中の人との情報共有
+</p>
+<ul class="org-ul">
+<li>文書の電子ファイル化，電子ファイル交換</li>
+</ul>
+
+<p>
+使えてあたりまえになったパソコンとインターネット
+</p>
+
+<ul class="org-ul">
+<li>学校でのIT化</li>
+<li>企業の社内システムやOA機器の導入</li>
+
+<li>操作能力の他に，</li>
+<li>ルールやモラル，</li>
+<li>読み書きそろばんの基本能力，</li>
+</ul>
+
+<p>
+負の効果
+</p>
+<ul class="org-ul">
+<li>生産性の向上につながらない，</li>
+<li>著作物の無断転用，</li>
+<li>思考能力の低下，</li>
+<li>情報漏洩</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org18582fc" class="outline-5">
+<h5 id="org18582fc">IT利用のための体系的な情報リテラシ教育が必要</h5>
+<div class="outline-text-5" id="text-org18582fc">
+<p>
+ITリテラシと情報リテラシは区別すべきもの
+</p>
+
+<p>
+IT技術は進化が早く専門化する傾向がある。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd84dae3" class="outline-5">
+<h5 id="orgd84dae3">メディアリテラシも注目されている。</h5>
+<div class="outline-text-5" id="text-orgd84dae3">
+<ul class="org-ul">
+<li>各メディアの情報の特徴を知り，</li>
+<li>鵜呑みにせず，真偽を見抜き，</li>
+<li><p>
+活用する
+</p>
+
+<p>
+誰もが情報発信者になれる時代において，
+</p>
+<ul class="org-ul">
+<li>公開情報から真偽を見抜く力が重要，</li>
+<li>「読む力」という意味で，メディアリテラシは，情報リテラシの一部</li>
+<li>「書く力」が情報リテラシには必要</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3efb9c4" class="outline-5">
+<h5 id="org3efb9c4">情報リテラシの本来的意義</h5>
+<div class="outline-text-5" id="text-org3efb9c4">
+<p>
+情報リテラシは，「情報を活用する創造的能力」である。
+</p>
+
+<p>
+それは，次の6つの能力領域 (:-s 過程) からなる 
+</p>
+
+<ol class="org-ol">
+<li>情報の収集 &#x2013; MECE</li>
+<li>情報の加工 &#x2013; 詳細化，分断化，取捨選択</li>
+<li>情報の分析 &#x2013; 構造化</li>
+<li>情報の獲得 &#x2013; 知識として保存する</li>
+<li>情報の生成 &#x2013; 客観化</li>
+<li>情報の発信 &#x2013; 外化，共有化</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orge610ff2" class="outline-5">
+<h5 id="orge610ff2">長く生き残る知識</h5>
+<div class="outline-text-5" id="text-orge610ff2">
+<p>
+現代人は，すぐに陳腐化してしまうITリテラシではなく，
+一生ものとして使い続けることができる情報リテラシこそ身につけなけれ
+ばならない。
+</p>
+
+<p>
+(s-:) 長く生き残る IT リテラシもあります。how ではない，what と
+why からなる IT リテラシもあるのだと思っています。
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: suzuki@iwate-u.ac.jp</p>
+<p class="date">Created: 2019-12-12 木 22:02</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
