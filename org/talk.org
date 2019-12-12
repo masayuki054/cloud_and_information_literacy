@@ -74,7 +74,7 @@
 
    [[./x_maps/03-computerとインターネットの利用目的.png]]
 
-   ([[./x_maps/computerとインターネットの利用目的.xmind][XMindファイルのダウンロード]])
+   ([[./x_maps/03-computerとインターネットの利用目的.xmind][XMindファイルのダウンロード]])
 
 #+END_CENTER
 
@@ -86,7 +86,7 @@
 [[./x_maps/04-Web進化論.png]]
 
 #+BEGIN_CENTER
-(XMindファイルのダウンロードはこちら[[./x_maps/04-Web進化論.xmind]])
+([[./x_maps/04-Web進化論.xmind][XMindファイルのダウンロードはこちら])
 #+END_CENTER
 
 
