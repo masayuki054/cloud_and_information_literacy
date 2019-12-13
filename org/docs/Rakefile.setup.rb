@@ -18,6 +18,7 @@ ORGS = [
 "information-literacy.org",
 "index.org",
 "internet.org",
+"logical-thinking.org",
 "markup.org",
 "mindmup.org",
 "org-mode.org",
